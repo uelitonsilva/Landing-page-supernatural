@@ -1,0 +1,66 @@
+.shows {
+    
+    padding: 2vw 5.6vw;
+    min-height: 15vw;
+          
+   .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+    
+    
+
+    @media (max-width:768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+   }
+
+    &__list {
+        align-items: center;
+        margin-top: 44px;
+        display: grid;
+        
+       
+        
+       
+            
+        
+        &--is-active {
+           display: grid;
+        }
+
+        &__item {
+            p {
+                text-align: center;
+                color: #fff;
+            }
+
+            .personagem {
+                color: #FFD700;
+            }
+            
+            img{
+                max-width: 100%;
+                width: 250px;
+                height: 250px;
+                border-radius: 4px;
+                
+            }
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width:768px) {
+            white-space: nowrap;
+            
+            padding-left: 20px;
+        }
+
+        }
+
+    
+    }
